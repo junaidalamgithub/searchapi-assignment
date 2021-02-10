@@ -1,0 +1,121 @@
+{
+	"info": {
+		"_postman_id": "0de0aa4c-57a4-4e09-a96f-e6601335f6ae",
+		"name": "Spocket Search API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/spocket/api/v1/products/search?premium=true&country=China&pageNumber=1&pageSize=10",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/spocket/api/v1/products/search?premium=true&country=China&pageNumber=1&pageSize=10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"spocket",
+						"api",
+						"v1",
+						"products",
+						"search"
+					],
+					"query": [
+						{
+							"key": "premium",
+							"value": "true"
+						},
+						{
+							"key": "country",
+							"value": "China"
+						},
+						{
+							"key": "pageNumber",
+							"value": "1"
+						},
+						{
+							"key": "pageSize",
+							"value": "10"
+						}
+					]
+				},
+				"description": "This collection contains end point to serach the products. \r\nFirst execute the POST method to populate the Apache Derby embedded DB with the product.json from the given URL."
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080//spocket/api/v1/products/populate-db",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080//spocket/api/v1/products/populate-db",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"",
+						"spocket",
+						"api",
+						"v1",
+						"products",
+						"populate-db"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/spocket/api/v1/products/search",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/spocket/api/v1/products/search",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"spocket",
+						"api",
+						"v1",
+						"products",
+						"search"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/spocket/api/v1/products/060095b8-0e4d-49f5-abd6-6bb34dcb5752",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/spocket/api/v1/products/060095b8-0e4d-49f5-abd6-6bb34dcb5752",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"spocket",
+						"api",
+						"v1",
+						"products",
+						"060095b8-0e4d-49f5-abd6-6bb34dcb5752"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
